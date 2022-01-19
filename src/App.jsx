@@ -9,11 +9,10 @@ const App = () => {
     return (
       <>
         <Routes>
-          <Route exact path = "/" component= {Home} />
-          <Route exact path = "/about" component= {About} />
-          <Route exact path = "/service" component= {Service} />
-          <Route exact path = "/contact" component= {Contact} />
-          <Home />
+          <Route exact path = "/" element= {<Home />} />
+          <Route exact path = "/about" element={<About />} />
+          <Route exact path = "/service" element= {<Service />} />
+          <Route exact path = "/contact" element= {<Contact />} />
         </Routes>
       </>
     );
